@@ -1,0 +1,16 @@
+{
+  "name": "regex-pocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "regex.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./regex.js"
+  },
+  "author": "Wendy Beck",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.18.3",
+    "regex": "^0.1.1"
+  }
+}
