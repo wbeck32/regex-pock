@@ -1,5 +1,4 @@
-
-const stuff = require('./_pocket.pm.small')
+const stuff = require("./_pocket.pm.small")
 const textToChange = [JSON.stringify(stuff)]
 let array1 = []
 const ma = new RegExp(/\^"is_article:\"([\w\W\-_*+.,]+)/);

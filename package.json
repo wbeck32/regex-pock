@@ -1,16 +1,23 @@
 {
-  "name": "regex-pocket",
+  "name": "regex-pock",
   "version": "1.0.0",
   "description": "",
   "main": "regex.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./regex.js"
+    "start": "nodemon "\"regex.js"\",
   },
-  "author": "Wendy Beck",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wbeck32/regex-pock.git"
+  },
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wbeck32/regex-pock/issues"
+  },
+  "homepage": "https://github.com/wbeck32/regex-pock#readme",
   "dependencies": {
-    "nodemon": "^1.18.3",
-    "regex": "^0.1.1"
+    "nodemon": "^1.18.3"
   }
 }
