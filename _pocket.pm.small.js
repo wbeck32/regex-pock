@@ -1,5 +1,5 @@
-module.exports = {
-  "239": {
+module.exports = [
+  {
     "item_id": "239",
     "resolved_id": "239",
     "given_url": "http://www.dooce.com/",
@@ -19,9 +19,9 @@ module.exports = {
     "has_video": "0",
     "has_image": "1",
     "word_count": "295",
-    "lang": ""
+    "lang": "",
   },
-  "1292": {
+  {
     "item_id": "1292",
     "resolved_id": "1292",
     "given_url": "http://www.digg.com/",
@@ -45,7 +45,7 @@ module.exports = {
     "time_to_read": 7,
     "top_image_url": "http://static.digg.com/static/fe/9c69c3/images/logo-og-digg@2x.png"
   },
-  "1894": {
+  {
     "item_id": "1894",
     "resolved_id": "1894",
     "given_url": "http://www.dailylit.com/",
@@ -67,7 +67,7 @@ module.exports = {
     "word_count": "172",
     "lang": ""
   },
-  "4810": {
+  {
     "item_id": "4810",
     "resolved_id": "4810",
     "given_url": "http://www.fimoculous.com/archive/post-1825.cfm",
@@ -89,8 +89,7 @@ module.exports = {
     "word_count": "1834",
     "lang": "en",
     "time_to_read": 8
-  },
-  "5057": {
+  }, {
     "item_id": "5057",
     "resolved_id": "5057",
     "given_url": "http://wefeelfine.org/",
@@ -111,8 +110,7 @@ module.exports = {
     "has_image": "0",
     "word_count": "0",
     "lang": ""
-  },
-  "6219": {
+  }, {
     "item_id": "6219",
     "resolved_id": "6219",
     "given_url": "http://www.cssbasics.com/",
@@ -133,8 +131,7 @@ module.exports = {
     "has_image": "0",
     "word_count": "17",
     "lang": "en"
-  },
-  "7216": {
+  }, {
     "item_id": "7216",
     "resolved_id": "54710398",
     "given_url": "http://www.melissaclifton.com/tutorial-popart.html",
@@ -155,8 +152,7 @@ module.exports = {
     "has_image": "1",
     "word_count": "801",
     "lang": ""
-  },
-  "7499": {
+  }, {
     "item_id": "7499",
     "resolved_id": "7499",
     "given_url": "http://www.authenticjobs.com/",
@@ -177,8 +173,7 @@ module.exports = {
     "has_image": "0",
     "word_count": "3",
     "lang": "en"
-  },
-  "8128": {
+  }, {
     "item_id": "8128",
     "resolved_id": "8128",
     "given_url": "http://freshome.com/2008/02/25/30-of-the-most-creative-bookshelves-designs/",
@@ -201,8 +196,7 @@ module.exports = {
     "lang": "en",
     "time_to_read": 8,
     "top_image_url": "http://cdn.freshome.com/wp-content/uploads/2008/02/Clipboard01.jpg"
-  },
-  "10632": {
+  }, {
     "item_id": "10632",
     "resolved_id": "10632",
     "given_url": "http://reddit.com/",
@@ -224,8 +218,7 @@ module.exports = {
     "word_count": "167",
     "lang": "en",
     "top_image_url": "https://www.redditstatic.com/icon.png"
-  },
-  "11428": {
+  }, {
     "item_id": "11428",
     "resolved_id": "11428",
     "given_url": "http://www.perpetualkid.com/",
@@ -246,8 +239,7 @@ module.exports = {
     "has_image": "0",
     "word_count": "137",
     "lang": "en"
-  },
-  "13488": {
+  }, {
     "item_id": "13488",
     "resolved_id": "13488",
     "given_url": "http://www.overheardinnewyork.com/",
@@ -268,8 +260,7 @@ module.exports = {
     "has_image": "1",
     "word_count": "642",
     "lang": ""
-  },
-  "13808": {
+  }, {
     "item_id": "13808",
     "resolved_id": "13808",
     "given_url": "http://www.readatwork.com/",
@@ -290,8 +281,7 @@ module.exports = {
     "has_image": "0",
     "word_count": "0",
     "lang": ""
-  },
-  "14573": {
+  }, {
     "item_id": "14573",
     "resolved_id": "540078361",
     "given_url": "http://www.tadalist.com/",
@@ -312,8 +302,7 @@ module.exports = {
     "has_image": "1",
     "word_count": "152",
     "lang": ""
-  },
-  "14804": {
+  }, {
     "item_id": "14804",
     "resolved_id": "14804",
     "given_url": "http://xkcd.com/",
@@ -334,8 +323,7 @@ module.exports = {
     "has_image": "2",
     "word_count": "0",
     "lang": "en"
-  },
-  "14917": {
+  }, {
     "item_id": "14917",
     "resolved_id": "14917",
     "given_url": "http://lib.ru/NABOKOW/",
@@ -356,8 +344,7 @@ module.exports = {
     "has_image": "0",
     "word_count": "719",
     "lang": ""
-  },
-  "15757": {
+  }, {
     "item_id": "15757",
     "resolved_id": "1778",
     "given_url": "http://www.shelfari.com/",
@@ -379,8 +366,7 @@ module.exports = {
     "word_count": "39",
     "lang": "en",
     "top_image_url": "https://s.gr-assets.com/assets/facebook/goodreads_wide-e23f6858b6bf20dcaf8493237a214a0e.png"
-  },
-  "18029": {
+  }, {
     "item_id": "18029",
     "resolved_id": "1002335739",
     "given_url": "http://www.moo.com/",
@@ -401,8 +387,7 @@ module.exports = {
     "has_image": "0",
     "word_count": "44",
     "lang": "en"
-  },
-  "22992": {
+  }, {
     "item_id": "22992",
     "resolved_id": "1809111",
     "given_url": "http://www.ifilm.com/",
@@ -423,8 +408,7 @@ module.exports = {
     "has_image": "0",
     "word_count": "28",
     "lang": "en"
-  },
-  "23904": {
+  }, {
     "item_id": "23904",
     "resolved_id": "23904",
     "given_url": "http://obsoleteskills.com/Skills/Skills",
@@ -445,8 +429,7 @@ module.exports = {
     "has_image": "1",
     "word_count": "223",
     "lang": "en"
-  },
-  "24156": {
+  }, {
     "item_id": "24156",
     "resolved_id": "24156",
     "given_url": "http://www.stetson.edu/~efriedma/numbers.html",
@@ -468,4 +451,4 @@ module.exports = {
     "word_count": "0",
     "lang": "en"
   }
-}
+]

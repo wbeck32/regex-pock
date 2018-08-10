@@ -18,22 +18,17 @@ class Replace extends RegExp {
     return result;
   }
 }
+const myData = [];
+const duh = Object.entries(stuff);
 
-const f = new Match(textToChange).toString();
-console.log('commit')
-const fSpl = f.split("resolved_title")
-let finalStuff = {}
-const fuckNugget = []
-const ugh = fSpl.forEach((i) => {
-  const split = i.split("is_article")[0]
-  const quote = split.split('"')
-  // quote[0] = 'resolved_title'
-  finalStuff.resolved_title = quote[2]
-  finalStuff.resolved_url = quote[6]
-  finalStuff.excerpt = quote[10]
-  console.log(888, finalStuff)
-  fuckNugget.push(finalStuff)
-// console.log(123, fuckNugget[0])
-// return fuckNugget;
+duh.forEach((ele) => {
+  const {resolved_title, resolved_url, excerpt} = ele[1]
+  myData.push(meh = {
+    resolved_title,
+    resolved_url,
+    excerpt
+  })
 })
-console.log(333333, fuckNugget, ugh)
+// console.log(111, myData)
+
+module.export = myData
