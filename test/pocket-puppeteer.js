@@ -1,15 +1,19 @@
 const puppeteer = require('puppeteer');
-const accessToken = '47ba6878-db01-6fbb-14f9-273e95&username=wbeck';
-const consumerKey = '78811-6782138b2a9e3a35a2ad90da';
+const buildIt = require('../regex.js')
 
-const init = (async() => {
+const testUrls = (async() => {
+  const urlsToTest = buildIt()
+  const validUrls = [];
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  await page.goto(`https://getpocket.com/v3/get?consumer_key=${consumerKey}&access_token=${accessToken}}&state=all&sort=newest`);
-  console.log(111, page.goto(`https://getpocket.com/v3/get?consumer_key=${consumerKey}&access_token=${accessToken}}&state=all&sort=newest`))
-  // await browser.close();
+  for (let i = 0; i < urlsToTest.length; i++) {
+    const stat = await page.goto(urlsToTest[i].resolvedUrl, {
+      'waitUntil': 'networkidle2'
+    })
+    console.log(stat.status(), urlsToTest[i])
+    stat.status() === 200 ? validUrls.push(urlsToTest[i]) : ''
+  }
+  await browser.close();
 
 })
-
-
-// })();
+testUrls()

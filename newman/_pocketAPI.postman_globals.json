@@ -1,0 +1,39 @@
+{
+  "id": "49f4099f-c63b-495e-83cd-638652e5d1a2",
+  "name": "pocketAPI",
+  "values": [
+    {
+      "key": "consumer_key",
+      "value": "78811-6782138b2a9e3a35a2ad90da",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "key": "access_token",
+      "value": "47ba6878-db01-6fbb-14f9-273e95&username=wbeck",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "key": "request_token",
+      "value": "16599fdd-2252-4b37-1e14-0fe5fe",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "key": "redirect_uri",
+      "value": "pocketapp78811:authorizationFinished",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "key": "code",
+      "value": "16599fdd-2252-4b37-1e14-0fe5fe",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "globals",
+  "_postman_exported_at": "2018-08-13T00:44:35.618Z",
+  "_postman_exported_using": "Postman/6.2.3"
+}

@@ -1,34 +1,35 @@
-const stuff = require("./_pocket.pm.small")
-const textToChange = [JSON.stringify(stuff)]
-let array1 = []
-const ma = new RegExp(/\^"is_article:\"([\w\W\-_*+.,]+)/);
-const m2 = new RegExp(/("sort_id":\d*,)([\w\W\s\-_*+.,]*)"is_index"/)
-const firstSection = new RegExp(/([\w\W\s\-_*+.,]*)("sort_id":\d*,)/)
 
-class Match extends RegExp {
-  [ Symbol.match](ttC) {
-    const result = RegExp.prototype[Symbol.match].call(this, ttC);
-    return result
-  }
-}
+module.exports = function buildIt() {
+  const stuff = require("./newman/newman-run-report-2018-08-13-04-20-41-320-0.json")
+  const myData = [];
+  const duh = JSON.stringify(stuff)
+  const duh2 = JSON.parse(duh)
+  const duh3 = duh2.collection.item[0].response[0].body
+  const myJunk = duh3.split('"is_article"')
+  const urlFormatter = new RegExp(/(\\\\\/)/)
+  const path = require('path')
 
-class Replace extends RegExp {
-  [ Symbol.replace](ele) {
-    const result = RegExp.prototype[Symbol.replace].call(this, ele, firstSection);
-    return result;
-  }
-}
-const myData = [];
-const duh = Object.entries(stuff);
+  myJunk.forEach((ele) => {
+    const split2 = ele.split('"resolved_title":"')[1] || ''
+    const title = split2.split('","resolved_url":"')[0] || ''
+    const exc = split2.split('","excerpt":"') || ''
+    const url = exc[0].split('","resolved_url":"') || ''
+    const myObj = {
+      resolvedTitle: title.toString(),
+      resolvedUrl: url[1],
+      excerpt: exc[1]
+    }
+    const {resolvedTitle, resolvedUrl, excerpt} = myObj
+    // const first = resolvedUrl.split('\/')
+    // console.log(url)
 
-duh.forEach((ele) => {
-  const {resolved_title, resolved_url, excerpt} = ele[1]
-  myData.push(meh = {
-    resolved_title,
-    resolved_url,
-    excerpt
+    const stripJunk = (resolvedTitle && resolvedUrl) ? myData.push(meh = {
+      resolvedTitle,
+      resolvedUrl,
+      excerpt
+    }) : undefined
   })
-})
-// console.log(111, myData)
-
-module.export = myData
+  // console.log(myData, myData.length)
+  return myData
+}
+//newman run ./newman/_pocket_get_my_stuff.postman_collection.json --environment ./newman/_pocketAPI.postman_environment.json -g ./newman/_pocketAPI.postman_globals.json -r cli,json -n 3

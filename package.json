@@ -4,7 +4,7 @@
   "description": "",
   "main": "regex.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "nodemon \"test/pocket-puppeteer.js\"",
     "start": "nodemon \"regex.js\""
   },
   "repository": {
@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/wbeck32/regex-pock#readme",
   "dependencies": {
+    "newman": "^4.0.2",
     "nodemon": "^1.18.3",
-    "puppeteer": "^1.7.0"
+    "path": "^0.12.7",
+    "puppeteer": "^1.7.0",
+    "resolve-path": "^1.4.0"
   }
 }
