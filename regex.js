@@ -6,8 +6,6 @@ module.exports = function buildIt() {
   const duh2 = JSON.parse(duh)
   const duh3 = duh2.collection.item[0].response[0].body
   const myJunk = duh3.split('"is_article"')
-  const urlFormatter = new RegExp(/(\\\\\/)/)
-  const path = require('path')
 
   myJunk.forEach((ele) => {
     const split2 = ele.split('"resolved_title":"')[1] || ''
@@ -20,16 +18,12 @@ module.exports = function buildIt() {
       excerpt: exc[1]
     }
     const {resolvedTitle, resolvedUrl, excerpt} = myObj
-    // const first = resolvedUrl.split('\/')
-    // console.log(url)
-
-    const stripJunk = (resolvedTitle && resolvedUrl) ? myData.push(meh = {
+    return (resolvedTitle && resolvedUrl) ? myData.push(meh = {
       resolvedTitle,
       resolvedUrl,
       excerpt
     }) : undefined
   })
-  // console.log(myData, myData.length)
   return myData
 }
 //newman run ./newman/_pocket_get_my_stuff.postman_collection.json --environment ./newman/_pocketAPI.postman_environment.json -g ./newman/_pocketAPI.postman_globals.json -r cli,json -n 3
