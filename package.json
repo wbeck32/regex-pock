@@ -2,7 +2,7 @@
   "name": "regex-pock",
   "version": "1.0.0",
   "description": "",
-  "main": "regex.js",
+  "main": "regex.cjs",
   "scripts": {
     "test": "nodemon \"test/pocket-puppeteer.js\"",
     "start": "node \"regex.cjs\""
