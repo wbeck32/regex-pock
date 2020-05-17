@@ -1,17 +1,16 @@
 module.exports = {
-	env:	{
-		commonjs: true,
-		es2017: true,
-		es6: true,
-		node: true
+	"env":	{
+		"commonjs": true,
+		"es2017": true,
+		"es6": true,
+		"node": true
 	},
-	ignorePatterns: ['results.js'],
-	parserOptions: {
-		ecmaFeatures: { jsx: true },
-		ecmaVersion: 8,
-		sourceType: 'module'
+	"parserOptions": {
+		"ecmaFeatures": { jsx: true },
+		"ecmaVersion": 8,
+		"sourceType": 'module'
 	},
-	rules: {
+	"rules": {
 		'accessor-pairs': 1,
 		'array-bracket-newline': ['error', 'never'],
 		'array-bracket-spacing': 1,
@@ -156,7 +155,7 @@ module.exports = {
 		'no-multi-assign': 1,
 		'no-multi-spaces': ['error'],
 		'no-multi-str': 1,
-		'no-multiple-empty-lines': ['error', { max: 2, maxEOF: 1 }],
+		'no-multiple-empty-lines': ['error', { max: , maxEOF: 1 }],
 		'no-native-reassign': 1,
 		'no-negated-condition': 1,
 		'no-negated-in-lhs': 1,
@@ -260,7 +259,7 @@ module.exports = {
 		'radix': 1,
 		'require-atomic-updates': 1,
 		'require-await': 1,
-		'require-jsdoc': 1,
+		'require-jsdoc': 0,
 		'require-unicode-regexp': 0,
 		'require-yield': 1,
 		'rest-spread-spacing': 1,
@@ -283,7 +282,7 @@ module.exports = {
 		'template-tag-spacing': 1,
 		'unicode-bom': 1,
 		'use-isnan': 1,
-		'valid-jsdoc': 1,
+		'valid-jsdoc': 0,
 		'valid-typeof': 1,
 		'vars-on-top': 1,
 		'wrap-iife': 1,

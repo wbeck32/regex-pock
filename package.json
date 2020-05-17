@@ -5,7 +5,7 @@
   "main": "regex.cjs",
   "scripts": {
     "test": "nodemon \"test/pocket-puppeteer.js\"",
-    "start": "node \"buildUrlList.js\""
+    "start": "node \"buildUrlList.cjs\""
   },
   "repository": {
     "type": "git",
