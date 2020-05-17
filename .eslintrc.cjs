@@ -1,16 +1,16 @@
 module.exports = {
-	"env":	{
-		"commonjs": true,
-		"es2017": true,
-		"es6": true,
-		"node": true
+	env:	{
+		commonjs: true,
+		es2017: true,
+		es6: true,
+		node: true
 	},
-	"parserOptions": {
-		"ecmaFeatures": { jsx: true },
-		"ecmaVersion": 8,
-		"sourceType": 'module'
+	parserOptions: {
+		ecmaFeatures: { jsx: true },
+		ecmaVersion: 8,
+		sourceType: 'module'
 	},
-	"rules": {
+	rules: {
 		'accessor-pairs': 1,
 		'array-bracket-newline': ['error', 'never'],
 		'array-bracket-spacing': 1,
@@ -155,7 +155,7 @@ module.exports = {
 		'no-multi-assign': 1,
 		'no-multi-spaces': ['error'],
 		'no-multi-str': 1,
-		'no-multiple-empty-lines': ['error', { max: , maxEOF: 1 }],
+		'no-multiple-empty-lines': ['error', { max: 2, maxEOF: 1 }],
 		'no-native-reassign': 1,
 		'no-negated-condition': 1,
 		'no-negated-in-lhs': 1,
